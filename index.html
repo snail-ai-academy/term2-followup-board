@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蜗牛AI 第二期招生跟进看板</title>
+<style>
+  :root{--ink:#1A1A2E;--ink3:#6A6A85;--paper:#FCFCFA;--line:rgba(26,26,46,.08);--accent:#FF5B1F;--gold:#D4A547;--ok:#16A34A;--warn:#D97706}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,'PingFang SC','Noto Sans SC',sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 18px 60px}
+  h1{font-size:22px;font-weight:900;letter-spacing:.5px}
+  .sub{font-size:12.5px;color:var(--ink3);margin-top:6px}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-top:20px}
+  .kpi{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 12px;text-align:center}
+  .kpi .n{font-size:26px;font-weight:900}
+  .kpi .l{font-size:12px;color:var(--ink3);margin-top:4px}
+  .kpi.hot .n{color:var(--accent)}
+  .funnel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:14px}
+  .frow{display:flex;align-items:center;gap:10px;margin:7px 0}
+  .frow .fl{width:110px;font-size:13px;color:var(--ink3);flex:none}
+  .frow .bar{height:22px;border-radius:6px;background:var(--accent);min-width:6px}
+  .frow .fv{font-size:13px;font-weight:700}
+  h2{font-size:15px;font-weight:800;margin:26px 0 10px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:13px}
+  th{background:#1A1A2E;color:#fff;padding:10px 8px;text-align:left;font-weight:700;font-size:12px;white-space:nowrap}
+  td{padding:10px 8px;border-top:1px solid var(--line);vertical-align:top;line-height:1.5}
+  .tag{display:inline-block;border-radius:100px;padding:2px 10px;font-size:11px;font-weight:700;white-space:nowrap}
+  .tag.go{background:#E8F5EE;color:var(--ok)}
+  .tag.wait{background:#FFF5EE;color:var(--warn)}
+  .tag.hot{background:rgba(255,91,31,.1);color:var(--accent)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:4px}
+  .card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:14px}
+  .card h3{font-size:14px;font-weight:800;margin-bottom:6px}
+  .card p{font-size:12.5px;color:var(--ink3);line-height:1.7}
+  .acts li{background:#fff;border:1px solid var(--line);border-radius:10px;padding:11px 14px;margin-bottom:8px;font-size:13.5px;line-height:1.6;list-style:none;display:flex;gap:10px}
+  .acts .who{flex:none;font-weight:800;color:var(--accent)}
+  .due{font-size:11.5px;color:var(--warn);font-weight:700;white-space:nowrap}
+  footer{margin-top:30px;font-size:11.5px;color:var(--ink3);line-height:1.8;text-align:center}
+  @media(max-width:640px){.wrap{padding:18px 12px 40px}table{font-size:12px}th,td{padding:8px 6px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🐌 蜗牛AI 第二期招生跟进看板</h1>
+  <p class="sub">毕业展 2026-09-26 → 第二期开课 2026-10-24（每周六 13:00–16:30 · A$1,999 · 两个月）｜ 看板更新：2026-09-26 22:45 ｜ 报名页：<b>snailai.au/enroll</b></p>
+
+  <div class="kpis">
+    <div class="kpi"><div class="n">94</div><div class="l">毕业展登记</div></div>
+    <div class="kpi"><div class="n">39</div><div class="l">实际到场</div></div>
+    <div class="kpi"><div class="n">32</div><div class="l">现场群</div></div>
+    <div class="kpi"><div class="n">19</div><div class="l">报名群</div></div>
+    <div class="kpi hot"><div class="n">8</div><div class="l">二期意向</div></div>
+    <div class="kpi hot"><div class="n">0</div><div class="l">已缴费</div></div>
+  </div>
+
+  <div class="funnel">
+    <div class="frow"><span class="fl">登记</span><div class="bar" style="width:100%"></div><span class="fv">94</span></div>
+    <div class="frow"><span class="fl">到场</span><div class="bar" style="width:41%"></div><span class="fv">39（41%）</span></div>
+    <div class="frow"><span class="fl">进现场群</span><div class="bar" style="width:34%"></div><span class="fv">32</span></div>
+    <div class="frow"><span class="fl">进报名群</span><div class="bar" style="width:20%"></div><span class="fv">19</span></div>
+    <div class="frow"><span class="fl">明确意向</span><div class="bar" style="width:8.5%;background:var(--gold)"></div><span class="fv">8</span></div>
+    <div class="frow"><span class="fl">已缴费</span><div class="bar" style="width:2%;background:var(--gold)"></div><span class="fv">0（目标：开课前锁定）</span></div>
+  </div>
+
+  <h2>🎯 二期意向 8 人跟进表（已在蜗牛CRM开机会）</h2>
+  <table>
+    <tr><th>姓名</th><th>微信</th><th>电话</th><th>背景 / 机会点</th><th>下一步动作</th><th>负责人</th><th>截止</th><th>状态</th></tr>
+    <tr><td><b>Lucy</b> (D038)</td><td>Lucykusydney</td><td>0410***88</td><td>悉尼土代土机，现场积极</td><td>微信发课程资料+报名链接</td><td>谢侑辰</td><td class="due">09-28</td><td><span class="tag go">微信已加</span></td></tr>
+    <tr><td><b>Mandy 曼蒂</b></td><td>touchmandymm</td><td>0421***24</td><td>第一期线上学员 → 转线下补差价；初级班 AI 老师候选（与素萍搭档）</td><td>补差价方案 + 老师培养沟通</td><td>罗斌</td><td class="due">09-28</td><td><span class="tag hot">重点</span></td></tr>
+    <tr><td><b>Isabella Feng</b></td><td>if21702066</td><td>0431***88</td><td>利物浦仓储公司 20+ 人 AI 化（B2B 大机会，已初步诊断，住 Pymble）</td><td>周二公司回访：企业方案+团队报名打包</td><td>罗斌</td><td class="due">09-30</td><td><span class="tag hot">B2B</span></td></tr>
+    <tr><td><b>Mark Wang</b></td><td>待加（房产买家代理）</td><td>0408***12</td><td>跨州房产买家代理，签到 Mark 疑似同一人，待确认</td><td>加微信确认身份+发资料</td><td>谢侑辰</td><td class="due">09-29</td><td><span class="tag wait">待加微信</span></td></tr>
+    <tr><td><b>Ada</b></td><td>Ada0468608888</td><td>0468***88</td><td>微信号即手机号</td><td>加微信发课程资料</td><td>谢侑辰</td><td class="due">09-28</td><td><span class="tag wait">待加微信</span></td></tr>
+    <tr><td><b>侠大大</b></td><td>oz0507</td><td>待留</td><td>疑似现场第一个到的老太太（坐老刘旁，待 Robin 确认身份）</td><td>微信确认身份+留电话+发资料</td><td>罗斌</td><td class="due">09-29</td><td><span class="tag wait">身份待确认</span></td></tr>
+    <tr><td><b>悉尼毛老师</b></td><td>待加</td><td>待留</td><td>歌剧院首席男中音歌唱家</td><td>加微信发课程资料</td><td>谢侑辰</td><td class="due">09-29</td><td><span class="tag wait">待加微信</span></td></tr>
+    <tr><td><b>Shiyang</b></td><td>mengshiyang100</td><td>待留</td><td>报名群成员</td><td>加微信发课程资料</td><td>谢侑辰</td><td class="due">09-29</td><td><span class="tag wait">待加微信</span></td></tr>
+  </table>
+
+  <h2>⭐ 三张重点机会卡</h2>
+  <div class="cards">
+    <div class="card"><h3>🏢 Isabella · 企业 AI 化（B2B）</h3><p>利物浦仓储公司 20+ 人，老板本人有意向，已做初步诊断，约好下周二公司回访。企业培训 + 团队报名打包，客单价可达数倍。住 Pymble 离家近，关系可长期经营。</p></div>
+    <div class="card"><h3>🎓 Mandy · 学员 → 老师</h3><p>第一期线上学员，毕业展明确二期意向。补差价转线下；有潜力培养成初级班 AI 老师，与素萍搭档教学。转化成功 = 招生 + 师资双收获。</p></div>
+    <div class="card"><h3>👵 老太太身份确认</h3><p>第一个到场、坐老刘旁。已排除 Lucy Shi（她是第一期学员）。候选：侠大大（oz0507，江苏扬州）。确认后留电话拉入跟进。</p></div>
+  </div>
+
+  <h2>✅ 行动项清单</h2>
+  <ul class="acts">
+    <li><span class="who">罗斌</span><span>审批第二期招生 SMS（两个版本：到场感谢 37 人 / 爽约召回 53 人），批准后建定时任务 <b>09-27 10:00</b> 发送（Cellcast，发件人 SnailAI）</span><span class="due">今晚</span></li>
+    <li><span class="who">谢侑辰</span><span>加微信：Mark Wang、悉尼毛老师、Shiyang、Ada（4 人）+ 逐个跟进转化</span><span class="due">09-28 前</span></li>
+    <li><span class="who">谢侑辰</span><span>Lucy 家台式机 Zoom 远程安装 WorkBuddy（龙虾）</span><span class="due">本周内</span></li>
+    <li><span class="who">罗斌</span><span>确认老太太身份（照片比对：侠大大？）</span><span class="due">09-28</span></li>
+    <li><span class="who">罗斌</span><span>Isabella 利物浦公司回访（企业 AI 化方案 + 团队报名）</span><span class="due">09-30 周二</span></li>
+    <li><span class="who">罗斌</span><span>爽约 53 人 SMS 召回（与招生 SMS 二合一发送）</span><span class="due">09-27</span></li>
+    <li><span class="who">罗斌</span><span>采购 25 米 HDMI 线（已入购买清单）</span><span class="due">10月前</span></li>
+  </ul>
+
+  <footer>
+    本看板为脱敏版（电话掩码），完整数据在蜗牛CRM · 项目「蜗牛AI第二期课程」<br>
+    路演前 / 中 / 后持续刷新 · 数据源：Supabase 签到库 + CRM + 报名页 snailai.au/enroll<br>
+    蜗牛路演计划和总结 v1.0 · 生成于 2026-09-26 22:45 AEST
+  </footer>
+</div>
+</body>
+</html>
